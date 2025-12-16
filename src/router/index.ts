@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ChatView from '../views/ChatView.vue'
+import BoardView from '../views/BoardView.vue'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
@@ -11,9 +11,9 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/chat',
-      name: 'chat',
-      component: ChatView,
+      path: '/board',
+      name: 'board',
+      component: BoardView,
     },
   ],
 })

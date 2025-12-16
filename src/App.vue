@@ -12,7 +12,7 @@ import { computed } from 'vue'
 const route = useRoute()
 
 const isHomeActive = computed(() => route.path === '/')
-const isChatActive = computed(() => route.path === '/chat')
+const isBoardActive = computed(() => route.path === '/board')
 </script>
 
 <template>
@@ -26,9 +26,9 @@ const isChatActive = computed(() => route.path === '/chat')
               <RouterLink to="/">Home</RouterLink>
             </FwbNavbarLink>
 
-            <!-- chat link -->
-            <FwbNavbarLink :is-active="isChatActive" link="chat">
-              <RouterLink to="/chat">Chat</RouterLink>
+            <!-- board link -->
+            <FwbNavbarLink :is-active="isBoardActive" link="board">
+              <RouterLink to="/board">Board</RouterLink>
             </FwbNavbarLink>
           </FwbNavbarCollapse>
         </template>

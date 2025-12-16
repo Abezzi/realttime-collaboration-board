@@ -1,5 +1,5 @@
 {
-  "name": "chat",
+  "name": "realtime-collaboration-board",
   "version": "0.0.0",
   "private": true,
   "type": "module",
